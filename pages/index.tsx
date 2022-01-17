@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const posts = [
-  { title: 'React Test', excerpt: 'Learn React Test'}
+  { title: 'React Test', excerpt: 'Learn React Test'},
   { title: 'React Test with Tailwind', excerpt: 'Learn React Test with Tailwind'}
 
 ];
@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
-        { posts.map((post, index))}
+       <h1> Hello Guys </h1>
       </div>
      
     </div>

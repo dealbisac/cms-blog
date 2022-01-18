@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { PostCard, Categories, PostWidget } from '../components'
 
 const posts = [
   { title: 'React Test', excerpt: 'Learn React Test'},
@@ -14,7 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
-       <h1> Hello Guys </h1>
+       {posts.map((post, index) => (
+         <div>
+           {post.title}
+           {post.excerpt}
+         </div>
+       ))}
       </div>
      
     </div>
